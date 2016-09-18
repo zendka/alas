@@ -7548,3 +7548,14 @@ body .footer {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.navbar-header {
+  float: none;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+.navbar-header .logo.pull-left {
+  float: none !important;
+}
+.navbar-header .logo img {
+  max-width: 100%;
+}

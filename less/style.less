@@ -32,3 +32,21 @@ body {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+
+// Logo (Navbar Header)
+.navbar-header {
+  // Override Bootstrap
+  float: none;
+  .logo.pull-left {
+    float: none !important;
+  }
+
+  // Style
+  text-align: center;
+  padding: 40px 0 20px;
+  .logo {
+    img {
+      max-width: 100%;
+    }
+  }
+}
