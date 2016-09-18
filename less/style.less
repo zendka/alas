@@ -5,9 +5,14 @@
 @import 'overrides';
 
 
-// Background colour
+// Background colours
 body {
   background-color: #CFD0D1;
+  // Main menu
+  .container .navbar-collapse {
+    .make-row();
+    background-color: #9A9D9F;
+  }
   .main-container,
   .footer {
     background-color: white;
@@ -29,7 +34,8 @@ body {
   border-radius: 0;
 }
 
-// Logo (Navbar Header)
+
+// Header >> Logo (Navbar Header)
 .navbar-header {
   // Override Bootstrap
   float: none;
@@ -41,10 +47,32 @@ body {
 
   // Style
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 40px 0 15px;
   .logo {
     img {
       max-width: 100%;
     }
+  }
+}
+
+
+// Header >> Main Menu (Navbar Collapse)
+.container .navbar-collapse {
+  // Center the menu
+  .clearfix();
+  nav {
+    position: relative; float: right; right: 50%;
+    > ul {
+      position: relative; float: right; right: -50%;
+    }
+  }
+
+  // Style
+  font-family: @font-family-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  .nav > li > a {
+    padding: 12px 15px 8px;
+    border-right: 1px solid #848787;
   }
 }

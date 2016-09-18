@@ -3983,7 +3983,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 7px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4496,29 +4496,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #656868;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #333;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #1a1a1a;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #333;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #656868;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4543,23 +4543,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #656868;
-  color: #555;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #333;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #656868;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4569,13 +4569,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #777;
+  color: #333;
 }
 .navbar-default .navbar-link:hover {
   color: #333;
 }
 .navbar-default .btn-link {
-  color: #777;
+  color: #333;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
@@ -6483,7 +6483,9 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+body .container .navbar-collapse:before,
+body .container .navbar-collapse:after {
   content: " ";
   display: table;
 }
@@ -6502,7 +6504,8 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+body .container .navbar-collapse:after {
   clear: both;
 }
 .center-block {
@@ -7529,6 +7532,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 body {
   background-color: #CFD0D1;
 }
+body .container .navbar-collapse {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #9A9D9F;
+}
 body .main-container,
 body .footer {
   background-color: white;
@@ -7547,7 +7555,7 @@ body .footer {
 .navbar-header {
   float: none;
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 40px 0 15px;
 }
 .navbar-header .logo {
   float: none !important;
@@ -7556,4 +7564,39 @@ body .footer {
 }
 .navbar-header .logo img {
   max-width: 100%;
+}
+.container .navbar-collapse {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.container .navbar-collapse:before,
+.container .navbar-collapse:after {
+  content: " ";
+  display: table;
+}
+.container .navbar-collapse:after {
+  clear: both;
+}
+.container .navbar-collapse:before,
+.container .navbar-collapse:after {
+  content: " ";
+  display: table;
+}
+.container .navbar-collapse:after {
+  clear: both;
+}
+.container .navbar-collapse nav {
+  position: relative;
+  float: right;
+  right: 50%;
+}
+.container .navbar-collapse nav > ul {
+  position: relative;
+  float: right;
+  right: -50%;
+}
+.container .navbar-collapse .nav > li > a {
+  padding: 12px 15px 8px;
+  border-right: 1px solid #848787;
 }
