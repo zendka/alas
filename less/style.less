@@ -79,9 +79,14 @@ body {
   font-family: @font-family-serif;
   font-size: 19px;
   text-transform: uppercase;
-  .nav > li > a {
-    padding: 11px 15px 5px;
-    border-right: 1px solid #848787;
+  li {
+    a {
+      padding: 11px 19px 5px;
+      border-right: 1px solid #848787;
+    }
+    &.first {
+      border-left: 1px solid #848787;
+    }
   }
 }
 

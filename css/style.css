@@ -7612,9 +7612,12 @@ body .footer {
   float: right;
   right: -50%;
 }
-.container .navbar-collapse .nav > li > a {
-  padding: 11px 15px 5px;
+.container .navbar-collapse li a {
+  padding: 11px 19px 5px;
   border-right: 1px solid #848787;
+}
+.container .navbar-collapse li.first {
+  border-left: 1px solid #848787;
 }
 .main-container {
   padding-top: 32px;
