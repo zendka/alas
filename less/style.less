@@ -112,7 +112,7 @@ body {
 
 
 // About page
-.page-node-1 {
+body.page-node-1 {
   .main-container > .row {
     > aside {
       .hidden-xs;
@@ -124,6 +124,42 @@ body {
       .make-md-column(10);
     }
 
+  }
+}
+
+
+// Contact page
+body.page-contact {
+  // Position the Map with no space around it
+  .main-container {
+    padding-top: 0;
+  }
+  .region-header {
+    .make-row();
+    margin-bottom: @grid-gutter-width / 2;
+  }
+
+  // Hide page header
+  .page-header {
+    display: none;
+  }
+
+  // Position the text block and the contact form into 2 columns
+  .region-content {
+    .make-row();
+    .block {
+      .make-sm-column(6);
+      margin-bottom: @grid-gutter-width / 2;
+    }
+  }
+
+  // Style
+  .region-header {
+    border-top: 1px solid #959999;
+  }
+  color: #666;
+  label {
+    font-weight: normal;
   }
 }
 
