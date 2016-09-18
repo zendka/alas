@@ -7540,3 +7540,11 @@ body .footer {
   margin-top: 0;
   background-color: white;
 }
+#navbar {
+  max-width: none;
+  margin-top: 0;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
