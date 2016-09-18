@@ -1255,7 +1255,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 41px;
+  font-size: 32px;
 }
 h2,
 .h2 {
@@ -1263,7 +1263,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 20px;
 }
 h4,
 .h4 {
@@ -1573,39 +1573,39 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 800px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 1020px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 1020px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2973,8 +2973,8 @@ select[multiple].input-lg {
   min-height: 31px;
 }
 .form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
@@ -2984,7 +2984,7 @@ select[multiple].input-lg {
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px;
+  right: 40px;
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
@@ -4976,8 +4976,8 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .jumbotron .container {
   max-width: 100%;
@@ -6486,8 +6486,8 @@ button.close {
 .modal-footer:after,
 body .container .navbar-collapse:before,
 body .container .navbar-collapse:after,
-.region-footer:before,
-.region-footer:after {
+.footer .region-footer:before,
+.footer .region-footer:after {
   content: " ";
   display: table;
 }
@@ -6508,7 +6508,7 @@ body .container .navbar-collapse:after,
 .modal-header:after,
 .modal-footer:after,
 body .container .navbar-collapse:after,
-.region-footer:after {
+.footer .region-footer:after {
   clear: both;
 }
 .center-block {
@@ -7132,7 +7132,7 @@ ul li.leaf {
   .form-type-password-confirm .password-help {
     border-left: 1px solid #ddd;
     left: 50%;
-    margin-left: 15px;
+    margin-left: 40px;
     position: absolute;
   }
 }
@@ -7389,8 +7389,8 @@ table .checkbox input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: right;
 }
 @media (min-width: 768px) {
@@ -7535,14 +7535,21 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 body {
   background-color: #CFD0D1;
 }
+body #navbar {
+  background: url(/sites/all/themes/alas/images/bg-header.jpg) no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
 body .container .navbar-collapse {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
   background-color: #9A9D9F;
 }
 body .main-container,
 body .footer {
-  background-color: white;
+  background: white url(/sites/all/themes/alas/images/bg-footer.png) top center no-repeat;
 }
 body .footer {
   margin-top: 0;
@@ -7603,36 +7610,85 @@ body .footer {
   padding: 11px 15px 5px;
   border-right: 1px solid #848787;
 }
+.main-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .footer {
   font-size: 14px;
 }
-.region-footer {
-  margin-left: -15px;
-  margin-right: -15px;
+.footer .region-footer {
+  margin-left: -40px;
+  margin-right: -40px;
 }
-.region-footer .block:first-child {
+.footer .region-footer .block:first-child {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media (min-width: 768px) {
-  .region-footer .block:first-child {
+  .footer .region-footer .block:first-child {
     float: left;
     width: 33.33333333%;
   }
 }
-.region-footer .block:last-child {
+.footer .region-footer .block:last-child {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media (min-width: 768px) {
-  .region-footer .block:last-child {
+  .footer .region-footer .block:last-child {
     float: left;
     width: 33.33333333%;
   }
+}
+.page-node-1 .main-container > .row > aside {
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 767px) {
+  .page-node-1 .main-container > .row > aside {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .page-node-1 .main-container > .row > aside {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-1 .main-container > .row > aside {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.page-node-1 .main-container > .row > section {
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .page-node-1 .main-container > .row > section {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-1 .main-container > .row > section {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+#block-block-3 {
+  font-size: small;
+  font-style: italic;
 }
 #block-block-2 {
   font-size: smaller;
