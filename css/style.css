@@ -7549,8 +7549,10 @@ body .footer {
   text-align: center;
   padding: 40px 0 20px;
 }
-.navbar-header .logo.pull-left {
+.navbar-header .logo {
   float: none !important;
+  margin: 0;
+  padding: 0;
 }
 .navbar-header .logo img {
   max-width: 100%;
