@@ -7526,3 +7526,17 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+body {
+  background-color: #CFD0D1;
+}
+body #navbar {
+  background-color: #757979;
+  margin-bottom: 0;
+}
+body .main-container {
+  background-color: white;
+}
+body .footer {
+  margin-top: 0;
+  background-color: white;
+}
