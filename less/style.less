@@ -297,6 +297,47 @@ body.page-contact {
 }
 
 
+// Item add new / edit form
+.node-item-form {
+  > div {
+    .make-row();
+    > div {
+      .make-sm-column(12);
+      &#edit-field-artist,
+      &#edit-field-date,
+      &#edit-field-dimensions,
+      &#edit-field-weight,
+      &#edit-field-categories,
+      &#edit-field-price {
+        .make-sm-column(6);
+      }
+      &#edit-field-artist,
+      &#edit-field-artist {
+        clear: both;
+      }
+    }
+  }
+
+  #edit-field-categories select[multiple] {
+    height: 150px;
+  }
+
+  #edit-field-sort,
+  #edit-field-medium,
+  #edit-field-literature,
+  #edit-field-reference,
+  #edit-field-id {
+    display: none;
+  }
+
+  #edit-body-und-0-format,
+  #edit-field-provenance-und-0-format,
+  #edit-field-essay-und-0-format {
+    display: none;
+  }
+}
+
+
 // About Photos block
 #block-block-3 {
   font-size: small;

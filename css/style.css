@@ -6493,7 +6493,9 @@ body.page-contact .region-header:after,
 body.page-contact .region-content:before,
 body.page-contact .region-content:after,
 .view-items .view-content:before,
-.view-items .view-content:after {
+.view-items .view-content:after,
+.node-item-form > div:before,
+.node-item-form > div:after {
   content: " ";
   display: table;
 }
@@ -6517,7 +6519,8 @@ body .container .navbar-collapse:after,
 .footer .region-footer:after,
 body.page-contact .region-header:after,
 body.page-contact .region-content:after,
-.view-items .view-content:after {
+.view-items .view-content:after,
+.node-item-form > div:after {
   clear: both;
 }
 .center-block {
@@ -7827,6 +7830,63 @@ body.page-contact label {
 }
 .view-items .views-field-path {
   font-size: smaller;
+}
+.node-item-form > div {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.node-item-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .node-item-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+.node-item-form > div > div#edit-field-artist,
+.node-item-form > div > div#edit-field-date,
+.node-item-form > div > div#edit-field-dimensions,
+.node-item-form > div > div#edit-field-weight,
+.node-item-form > div > div#edit-field-categories,
+.node-item-form > div > div#edit-field-price {
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .node-item-form > div > div#edit-field-artist,
+  .node-item-form > div > div#edit-field-date,
+  .node-item-form > div > div#edit-field-dimensions,
+  .node-item-form > div > div#edit-field-weight,
+  .node-item-form > div > div#edit-field-categories,
+  .node-item-form > div > div#edit-field-price {
+    float: left;
+    width: 50%;
+  }
+}
+.node-item-form > div > div#edit-field-artist,
+.node-item-form > div > div#edit-field-artist {
+  clear: both;
+}
+.node-item-form #edit-field-categories select[multiple] {
+  height: 150px;
+}
+.node-item-form #edit-field-sort,
+.node-item-form #edit-field-medium,
+.node-item-form #edit-field-literature,
+.node-item-form #edit-field-reference,
+.node-item-form #edit-field-id {
+  display: none;
+}
+.node-item-form #edit-body-und-0-format,
+.node-item-form #edit-field-provenance-und-0-format,
+.node-item-form #edit-field-essay-und-0-format {
+  display: none;
 }
 #block-block-3 {
   font-size: small;
