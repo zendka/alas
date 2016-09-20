@@ -271,13 +271,13 @@ body.page-contact {
     width: 130px;
     margin-right: 20px;
   }
-
   .views-field-title,
   .views-field-field-artist,
   .views-field-path {
     margin-left: 150px;
   }
 
+  // Style
   .views-field-title {
     line-height: 1;
     font-style: italic;
@@ -293,6 +293,37 @@ body.page-contact {
   }
   .views-field-path {
     font-size: smaller;
+  }
+}
+
+
+// Front page
+body.front {
+  .main-container {
+    padding-top: 0;
+  }
+
+  // Make front image spread to the edges
+  #block-block-6 {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
+    img {
+      max-width: 100%;
+      width: @container-large-desktop;
+    }
+  }
+
+  // Page header
+  .page-header {
+    margin-top: @grid-gutter-width / 2;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 25px;
+  }
+
+  // Featured items view
+  .views-row {
+    border: none;
   }
 }
 

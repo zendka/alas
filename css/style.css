@@ -7831,6 +7831,26 @@ body.page-contact label {
 .view-items .views-field-path {
   font-size: smaller;
 }
+body.front .main-container {
+  padding-top: 0;
+}
+body.front #block-block-6 {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+body.front #block-block-6 img {
+  max-width: 100%;
+  width: 1020px;
+}
+body.front .page-header {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  border: none;
+  font-size: 25px;
+}
+body.front .views-row {
+  border: none;
+}
 .node-item-form > div {
   margin-left: -40px;
   margin-right: -40px;
