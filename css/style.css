@@ -3988,7 +3988,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4003,7 +4003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: transparent;
   border-color: #997767;
 }
 .nav .nav-divider {
@@ -7837,4 +7837,13 @@ body.page-contact label {
 }
 #block-block-1 {
   text-align: center;
+}
+#block-system-user-menu {
+  text-align: right;
+}
+#block-system-user-menu li {
+  display: inline-block;
+}
+#block-system-user-menu li a {
+  padding: 0 10px;
 }
