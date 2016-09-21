@@ -7629,6 +7629,10 @@ body .footer {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.page-header {
+  border: none;
+  margin-bottom: 15px;
+}
 .footer {
   font-size: 14px;
 }
