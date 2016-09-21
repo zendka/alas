@@ -9,6 +9,13 @@
 @icon-font-path: '../bootstrap/fonts/';
 
 
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@brand-primary:         #997767;
+
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -17,7 +24,7 @@
 @text-color:            #444;
 
 //** Global textual link color.
-@link-color:            #997767;
+@link-color:            @brand-primary;
 
 @link-hover-color:      #695747;
 
@@ -86,5 +93,3 @@
 //##
 
 @input-border-radius:            0;
-
-@input-height-base:              @line-height-computed + 6px;
