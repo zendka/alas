@@ -7882,7 +7882,6 @@ body.front .views-row {
 .node-item-form > div > div#edit-field-date,
 .node-item-form > div > div#edit-field-dimensions,
 .node-item-form > div > div#edit-field-weight,
-.node-item-form > div > div#edit-field-categories,
 .node-item-form > div > div#edit-field-price {
   position: relative;
   min-height: 1px;
@@ -7894,7 +7893,6 @@ body.front .views-row {
   .node-item-form > div > div#edit-field-date,
   .node-item-form > div > div#edit-field-dimensions,
   .node-item-form > div > div#edit-field-weight,
-  .node-item-form > div > div#edit-field-categories,
   .node-item-form > div > div#edit-field-price {
     float: left;
     width: 50%;
