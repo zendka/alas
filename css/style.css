@@ -7783,6 +7783,9 @@ body.page-contact label {
 .node-item .field-name-field-essay {
   font-size: 17px;
 }
+.view-items .view-filters {
+  margin-bottom: 35px;
+}
 .view-items .view-content {
   margin-left: -20px;
   margin-right: -20px;
@@ -7804,6 +7807,10 @@ body.page-contact label {
   padding-top: 17px;
   padding-bottom: 17px;
   border-bottom: 1px solid #EAEAEA;
+}
+.view-items .views-row:first-of-type,
+.view-items .views-row:nth-of-type(2) {
+  border-top: 1px solid #EAEAEA;
 }
 .view-items .views-field-field-images {
   float: left;

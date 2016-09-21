@@ -249,6 +249,10 @@ body.page-contact {
 
 // View Items
 .view-items {
+  .view-filters {
+    margin-bottom: 35px;
+  }
+
   // Make two columns
   .view-content {
     .make-row(40px);
@@ -263,6 +267,10 @@ body.page-contact {
     padding-top: 17px;
     padding-bottom: 17px;
     border-bottom: 1px solid #EAEAEA;
+    &:first-of-type,
+    &:nth-of-type(2) {
+      border-top: 1px solid #EAEAEA;
+    }
   }
 
   // Position image to the left
